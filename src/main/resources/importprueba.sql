@@ -1,0 +1,56 @@
+--INSERT INTO public.users (id, address, age, created_at, email, first_name, image_url, last_name, status, updated_at) VALUES (1, 'Av. Landaeta', 21, '2023-03-20 00:13:44.000000', 'xmenacruzt@gmail.com', 'Ximena', null, 'Cruz', true, null);
+
+-- INSERT INTO public.users (id, address, age, created_at, email, first_name, image_url, last_name, status, updated_at) VALUES (1, 'Av. Landaeta', 21, '2023-03-20 00:13:44.000000', 'xmenacruzt@gmail.com', 'Ximena', null, 'Cruz', true, null);
+--
+-- --
+-- INSERT INTO public.sample (id, date, user_id) VALUES (1, '2022-12-30 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (2, '2023-01-01 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (3, '2023-01-02 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (4, '2023-01-03 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (5, '2023-01-04 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (6, '2023-01-05 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (7, '2023-01-06 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (8, '2023-01-07 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (9, '2023-01-08 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (10, '2023-01-09 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (11, '2023-01-10 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (12, '2023-01-11 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (13, '2023-01-12 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (14, '2023-01-13 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (15, '2023-01-14 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (16, '2023-01-15 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (17, '2023-01-16 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (18, '2023-01-17 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (19, '2023-01-18 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (20, '2023-01-19 00:17:36.000000', 1);
+-- INSERT INTO public.sample (id, date, user_id) VALUES (21, '2023-01-20 00:17:36.000000', 1);
+--
+-- INSERT INTO public.heart_rate (id, bpm, sample_id) VALUES (1, 98, 1);
+-- INSERT INTO public.heart_rate (id, bpm, sample_id) VALUES (2, 65, 2);
+-- INSERT INTO public.heart_rate (id, bpm, sample_id) VALUES (3, 78, 3);
+-- INSERT INTO public.heart_rate (id, bpm, sample_id) VALUES (4, 79, 4);
+-- INSERT INTO public.heart_rate (id, bpm, sample_id) VALUES (5, 80, 5);
+-- INSERT INTO public.heart_rate (id, bpm, sample_id) VALUES (6, 86, 6);
+-- INSERT INTO public.heart_rate (id, bpm, sample_id) VALUES (7, 67, 7);
+--
+-- INSERT INTO public.blood_pressure (id, dia, sys, sample_id) VALUES (1, 65, 120, 8);
+-- INSERT INTO public.blood_pressure (id, dia, sys, sample_id) VALUES (2, 78, 120, 9);
+-- INSERT INTO public.blood_pressure (id, dia, sys, sample_id) VALUES (3, 60, 110, 10);
+-- INSERT INTO public.blood_pressure (id, dia, sys, sample_id) VALUES (4, 67, 90, 11);
+-- INSERT INTO public.blood_pressure (id, dia, sys, sample_id) VALUES (5, 54, 110, 12);
+-- INSERT INTO public.blood_pressure (id, dia, sys, sample_id) VALUES (6, 74, 104, 13);
+-- INSERT INTO public.blood_pressure (id, dia, sys, sample_id) VALUES (7, 78, 100, 14);
+--
+-- INSERT INTO public.blood_oxigen (id, o2, sample_id) VALUES (1, 94, 15);
+-- INSERT INTO public.blood_oxigen (id, o2, sample_id) VALUES (2, 95, 16);
+-- INSERT INTO public.blood_oxigen (id, o2, sample_id) VALUES (3, 98, 17);
+-- INSERT INTO public.blood_oxigen (id, o2, sample_id) VALUES (4, 97, 18);
+-- INSERT INTO public.blood_oxigen (id, o2, sample_id) VALUES (5, 98, 19);
+-- INSERT INTO public.blood_oxigen (id, o2, sample_id) VALUES (6, 100, 20);
+-- INSERT INTO public.blood_oxigen (id, o2, sample_id) VALUES (7, 96, 21);
+
+--
+--
+-- SELECT a.o2, b.date FROM blood_oxigen a, Sample b where a.sample_id=b.id ORDER BY b.date DESC
+--
+--SELECT a.o2, b.date FROM blood_oxigen a, Sample b where a.sample_id=b.id AND b.user_id=2 ORDER BY b.date DESC
